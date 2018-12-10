@@ -248,47 +248,6 @@ class Hero:
             else:
                 self.turn = self.right
 
-
-
-
-
-        # YURBAN
-        # if self.turn == self.right:
-        #     if self.is_right_free():
-        #         self.move(pg.K_d)
-        #     elif not self.is_bottom_free() and self.is_right_free():
-        #         self.move(pg.K_d)
-        #     elif not self.is_bottom_free() and not self.is_right_free():
-        #         self.turn = self.up
-        #     else:
-        #         self.move(pg.K_s)
-        #         self.turn = self.down
-        # elif self.turn == self.down:
-        #     if not self.is_left_free() and self.is_bottom_free():
-        #         self.move(pg.K_s)
-        #     elif not self.is_left_free() and not self.is_bottom_free():
-        #         self.turn = self.right
-        #     else:
-        #         self.move(pg.K_a)
-        #         self.turn = self.left
-        # elif self.turn == self.up:
-        #     if not self.is_right_free() and self.is_top_free():
-        #         self.move(pg.K_w)
-        #     elif not self.is_top_free() and not self.is_right_free():
-        #         self.turn = self.left
-        #     else:
-        #         self.move(pg.K_d)
-        #         self.turn = self.right
-        # else:
-        #     if not self.is_top_free() and self.is_left_free():
-        #         self.move(pg.K_a)
-        #     elif not self.is_top_free() and not self.is_left_free():
-        #         self.turn = self.down
-        #     else:
-        #         self.move(pg.K_w)
-        #         self.turn = self.up
-
-
     def is_right_free(self):
         return (self.lvl[self.x + 1][self.y] != 1 and self.x != count - 1)
 
